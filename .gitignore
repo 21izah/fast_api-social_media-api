@@ -1,0 +1,6 @@
+__pycache__
+venv/
+.env
+lib/
+include/site/python3.9/greenlet
+bin/
