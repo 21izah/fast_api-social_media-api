@@ -23,17 +23,6 @@ from ..config import settings
 
 
 
-# from fastapi import FastAPI, Depends, HTTPException, status
-# from starlette.responses import JSONResponse
-# from db.session import get_db_session
-# from db.repository.user import get_user
-# from starlette.background import BackgroundTasks
-# from pydantic import BaseModel
-# from fastapi_mail import FastMail, MessageSchema, MessageType
-# from jose import jwt, JWTError
-# from passlib.context import CryptContext
-# from pydantic import BaseModel
-
 
 from ..database import SessionLocal, engine, get_db
 from ..import schemas, utils
