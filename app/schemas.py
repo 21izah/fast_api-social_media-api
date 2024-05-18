@@ -16,13 +16,13 @@ class UserCreate(BaseModel):
     email:EmailStr
     password: str
     class Config:
-        orm_mode = True
+        ofrom_attributes = True
         
 class UserLogin(BaseModel):
     username:EmailStr
     password: str
     class Config:
-        orm_mode = True
+        ofrom_attributes = True
         
         
 class UserOut(BaseModel):
@@ -31,12 +31,12 @@ class UserOut(BaseModel):
     email:EmailStr
     created_at: datetime
     class Config:
-        orm_mode = True
+        ofrom_attributes = True
         
 # class VotesCount(BaseModel):
 #     votes:int
 #     class Config:
-#         orm_mode = True
+#         ofrom_attributes = True
             
     
 class PostBase(BaseModel):
@@ -57,14 +57,14 @@ class Post(PostBase):
     owner: UserOut
 
     class Config:
-        orm_mode = True
+        ofrom_attributes = True
 
 
 class PostOut(Post):
   post:Post
   votes:int
   class Config:
-    orm_mode = True
+    ofrom_attributes = True
         
         
 
@@ -74,7 +74,7 @@ class Token(BaseModel):
     token:str
 
     class Config:
-        orm_mode = True
+        ofrom_attributes = True
         
         
 class TokenData(BaseModel):
@@ -82,7 +82,7 @@ class TokenData(BaseModel):
 
 
     class Config:
-        orm_mode = True
+        ofrom_attributes = True
 
 
 
