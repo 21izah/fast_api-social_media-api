@@ -27,7 +27,8 @@ from ..config import settings
 from ..database import SessionLocal, engine, get_db
 from ..import schemas, utils
 router = APIRouter(
-  prefix="/api"
+  prefix="/api",
+    tags=["AUth"]
 )
 
 

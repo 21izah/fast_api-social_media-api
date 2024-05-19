@@ -15,7 +15,8 @@ from ..import schemas, utils,oauth2
 import requests
 
 router = APIRouter(
-  prefix="/api/posts" 
+  prefix="/api/posts" ,
+    tags=["Social"]
 )
 
 
