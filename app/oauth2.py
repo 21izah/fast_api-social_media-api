@@ -13,7 +13,7 @@ from .database import get_db
 from .config import settings
 
 
-oauth2_schema = OAuth2PasswordBearer(tokenUrl="login")
+oauth2_schema = OAuth2PasswordBearer(tokenUrl="api/login")
 
 SECRET_KEY = f"{settings.secret_key}"
 ALGORITHM = f"{settings.algorithm}"
